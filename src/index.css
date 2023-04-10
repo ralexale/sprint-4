@@ -3,6 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+
 section {
     transition: transform 1s ease-out;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6;
+    gap: 20px;
+    height: 100vh;
+}
+
+.toggle-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
 }

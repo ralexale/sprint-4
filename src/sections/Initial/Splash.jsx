@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom/dist";
 
 const Splash = () => {
     const navigate = useNavigate();
 
-    const [first, setfirst] = useState("hola");
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            navigate("/slidepage");
+        }, 5000);
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <main className="grid place-items-center justify-center h-screen w-screen bg-mainColor overflow-hidden ">

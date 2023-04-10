@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import slide1 from "../assets/slide-1.png";
-import slide2 from "../assets/slide-2.png";
-import slide3 from "../assets/slide-3.png";
+import slide1 from "../../assets/slide-1.png";
+import slide2 from "../../assets/slide-2.png";
+import slide3 from "../../assets/slide-3.png";
 import { useNavigate } from "react-router-dom/dist";
 
 const SlidePage = () => {
